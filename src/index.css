@@ -295,9 +295,12 @@ main {
 }
 
 .cantidad-gasto {
-    font-size: 2.4rem;
+    font-size: 1.8rem;
     color: var(--negro);
     font-weight: 900;
+    @media (min-width: 480px){
+        font-size: 2.4rem;
+    }
 }
 
 .contenido-gasto {
@@ -372,6 +375,7 @@ main {
     right: 0;
     bottom: 0;
     height: 100%;
+    overflow-y: hidden;
 }
 .modal .cerrar-modal {
     position: absolute;
@@ -395,8 +399,8 @@ main {
     transition-timing-function: ease-in;
     opacity: 0;
     width: 90%;
-    margin-top: 4rem;
-    height: auto;
+    margin-top: 5rem;
+    height: 100%;
     @media (min-width: 480px){
         width: 10rem;
         margin-top: 0;
