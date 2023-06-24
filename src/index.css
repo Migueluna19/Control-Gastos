@@ -73,11 +73,12 @@ header h1 {
     display: block;
     text-transform: uppercase;
     color: var(--blanco);
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
     padding-bottom: 1rem;
     border-bottom: 2px solid var(--azul);
      @media (min-width: 480px){
         font-size: 3.6rem;
+        margin-bottom: 4rem;
     }
 }
 .formulario .campo {
@@ -370,13 +371,18 @@ main {
     left: 0;
     right: 0;
     bottom: 0;
+    height: 100%;
 }
 .modal .cerrar-modal {
     position: absolute;
     right: 3rem;
     top: 3rem;
-    width: 3rem;
+    width: 2rem;
+    height: 2rem;
+    @media (min-width: 480px){
+        width: 3rem;
     height: 3rem;
+    }
 }
 .modal .cerrar-modal img {
     width: 100%;
@@ -389,7 +395,7 @@ main {
     transition-timing-function: ease-in;
     opacity: 0;
     width: 90%;
-    margin-top: 4.9rem;
+    margin-top: 4rem;
     height: auto;
     @media (min-width: 480px){
         width: 10rem;
