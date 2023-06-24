@@ -16,7 +16,7 @@ function NuevoPresupuesto({presupuesto, setPresupuesto,setValido}) {
     <div className='contenedor-presupuesto contenedor sombra '>
    <form onSubmit={handlePresupuesto} className='formulario'>
     <div className='campo'>
-        <label>Define tu Presupuesto</label>
+        <label className='campo-label'>Define tu Presupuesto</label>
         <input 
         className='nuevo-presupuesto'
         type="number" 

@@ -84,9 +84,13 @@ header h1 {
 
 .formulario label {
     color: var(--azul);
-    font-size: 2.8rem;
+    font-size: 1.8rem;
     text-align: center;
     margin-bottom: 2rem;
+    width: 100%;
+    @media (min-width: 480px){
+        font-size: 2.8rem;
+    }
 }
 
 .formulario input[type="text"],
@@ -183,6 +187,7 @@ header h1 {
 .formulario input[type="number"].nuevo-presupuesto {
     font-size: 2.8rem;
     text-align: center;
+    width: 100%;
 }
 
 .contenedor-presupuesto svg {
@@ -235,8 +240,12 @@ main {
 
 .filtros .campo {
     display: flex;
-    align-items: center;
-    gap: 2rem;
+    flex-direction: column;
+    @media (min-width: 480px){
+        align-items: center;
+        gap: 2rem;
+    }
+   
 }
 .filtros label {
     font-size: 3rem;
@@ -286,7 +295,10 @@ main {
 }
 
 .contenido-gasto img {
-    width: 10rem;
+    width: 5rem;
+    @media (min-width: 480px){
+        width: 10rem;
+    }
 }
 
 .descripcion-gasto p {
@@ -294,25 +306,34 @@ main {
 }
 .descripcion-gasto .categoria {
     color: var(--gris);
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     font-weight: 900;
     text-transform: uppercase;
+    @media (min-width:480px ){
+        font-size: 1.6rem;
+    }
 }
 .descripcion-gasto p {
     margin-bottom: 1rem;
 }
 .descripcion-gasto .nombre-gasto {
     color: var(--gris-oscuro);
-    font-size: 2.4rem;
+    font-size: 1.8rem;
     font-weight: 700;
+    @media (min-width:480px ){
+        font-size: 2.4rem;
+    }
 }
 .descripcion-gasto .nombre-gasto:hover {
     cursor: pointer;
 }
 .descripcion-gasto .fecha-gasto {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     font-weight: 900;
     color: var(--gris-oscuro);
+    @media (min-width:480px ){
+        font-size: 1.8rem;
+    }
 }
 .descripcion-gasto .fecha-gasto span {
     font-weight: 400;
@@ -352,11 +373,16 @@ main {
 
 .modal .formulario {
     max-width: 80rem;
-    width: 40rem;
     transition-property: all;
     transition-duration: 300ms;
     transition-timing-function: ease-in;
     opacity: 0;
+    width: 90%;
+    margin-top: 10rem;
+    @media (min-width: 480px){
+        width: 40rem;
+        margin-top: 0;
+    }
 }
 .modal label {
     color: var(--blanco);
